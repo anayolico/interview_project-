@@ -1,0 +1,53 @@
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-card:hover {
+  background-color: #f9fafb;
+}
+
+.user-card.selected {
+  background-color: #eef2ff; /* Light blue highlight from the image */
+  border-left: 4px solid #4f46e5;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #666;
+}
+
+.user-rating {
+  font-size: 11px;
+  color: #f59e0b;
+  margin-top: 4px;
+}
+
+.rating-num {
+  color: #333;
+  margin-left: 4px;
+  font-weight: 600;
+}
