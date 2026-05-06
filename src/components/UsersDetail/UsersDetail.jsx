@@ -1,4 +1,5 @@
 import React from 'react';
+import { Download, MapPin, Star, Mail } from 'lucide-react';
 import './UsersDetail.css';
 
 /**
@@ -17,18 +18,18 @@ const UsersDetail = ({ user }) => {
           <img src={user.avatar} alt={user.name} className="large-avatar" />
           <div>
             <h2 className="detail-name">{user.name}</h2>
-            <p className="location">📍 Lagos, Nigeria</p>
+            <p className="location"><MapPin size={14} className="icon-inline" /> Lagos, Nigeria</p>
           </div>
         </div>
         <button className="btn-download">
-          <span className="icon">📥</span> Download Report
+          <Download size={16} /> Download Report
         </button>
       </div>
 
       {/* 2. Quick Tags (Rating and Email) */}
       <div className="detail-tags">
-        <div className="tag rating">⭐ {user.rating} <span className="trend">+0.3% From last cycle</span></div>
-        <div className="tag email">📧 {user.name.toLowerCase().replace(' ', '.')}@fowgate.com</div>
+        <div className="tag rating"><Star size={14} className="icon-inline rating-star" /> {user.rating} <span className="trend">+0.3% From last cycle</span></div>
+        <div className="tag email"><Mail size={14} className="icon-inline" /> {user.name.toLowerCase().replace(' ', '.')}@fowgate.com</div>
       </div>
 
       {/* 3. Info Grid: Showing Role, Dept, and Manager */}

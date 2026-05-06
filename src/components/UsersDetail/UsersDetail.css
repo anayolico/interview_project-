@@ -35,8 +35,19 @@
 
 .location {
   font-size: 13px;
-  color: #666;
-  margin-top: 2px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.icon-inline {
+  color: #6b7280;
+}
+
+.rating-star {
+  color: #f59e0b;
+  fill: #f59e0b;
 }
 
 .btn-download {
